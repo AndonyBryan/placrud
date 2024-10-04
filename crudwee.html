@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Contactos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center">Gestión de Contactos</h2>
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <!-- Aquí puedes agregar contenido o dejar en blanco -->
+            </div>
+        </div>
+
+        <div class="row content-container">
+            <div class="col-md-12 mt-4">
+                <label id="lblProfileName"></label>
+                <label id="lblProfileCarrera"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <!-- Aquí puedes agregar contenido o dejar en blanco -->
+            </div>
+        </div>
+
+        <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active rounded-5" onclick="changeTab('home')">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5" onclick="changeTab('profile')">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5" onclick="changeTab('contact')">Contact</button>
+            </li>
+        </ul>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-info" role="alert">
+                    Bienvenido al sistema de gestión de contactos. Aquí puedes agregar, actualizar, eliminar y buscar contactos.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <div class="form-group">
+                    <label for="textmatricula">Matricula</label>
+                    <input type="text" id="textmatricula" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="form-group">
+                    <label for="textnombre">Nombre</label>
+                    <input type="text" id="textnombre" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="form-group">
+                    <label for="textcarrera">Carrera</label>
+                    <input type="text" id="textcarrera" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="form-group mt-4">
+                    <button class="btn btn-primary">Agregar</button>
+                    <button class="btn btn-success">Actualizar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                    <button class="btn btn-info">Buscar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <table class="table table-bordered table-striped">
+                    <!-- Aquí puedes agregar filas de ejemplo o dejar en blanco -->
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeTab(tabName) {
+            console.log("Tab changed to: " + tabName);
+            return false;
+        }
+    </script>
+</body>
+</html>
